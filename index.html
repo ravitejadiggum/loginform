@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+    <form id="my_form">
+        <div class="container">
+            <div class="header">
+                <h1>Registration Form</h1>
+                <p class="para_one">Fill out the form carefully for registration</p>
+            </div>
+            <div class="hero">
+                <p>Student Name</p>
+                <div class="hero_items">
+                    <div class="hero_names">
+                        <div class="hero_items_input">
+                            <input class="input" type="text" id="firstname">
+                            <p class="para">first Name</p>
+                        </div>
+                        <div class="hero_items_input">
+                            <input class="input" type="text" id="lastName">
+                            <p class="para">Last Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero_items">
+                    <div class="hero_items_input">
+                        <p class="para">Gender</p>
+                        <input list="options" name="Gender" placeholder="Please select your gender", id="gender">
+                        <datalist id="options">
+                            <option value="Male">
+                            <option value="Female">
+                        </datalist>
+                    </div>
+                    <div class="hero_items_input">
+                        <p class="para">Student E-mail</p>
+                        <input class="inputspecial" type="mail" id="mail" placeholder="ex:myname@example.com">
+                    </div>
+                </div>
+                <div class="hero_items">
+                    <div class="hero_id">
+                        <p class="para">Student id</p>
+                        <input class="inputid" type="text" id="id">
+                    </div>
+                    <div class="hero_item">
+                        <p class="para">List of Classes</p>
+                        <input list="classes" name="classes" placeholder="Please select" , id="class">
+                        <datalist id="classes">
+                            <option value="AIML">
+                            <option value="CSE">
+                            <option value="ECE">
+                            <option value="MECH">
+                        </datalist>
+
+                             
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit" class="specialsubmit"  onclick="submitinput()">submit</button>
+            </div>
+        </div>
+    </form>
+    <div id="display"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+    
+        
